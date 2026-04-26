@@ -25,6 +25,9 @@ lsblk -d -o NAME,MODEL,SIZE,TYPE,FSTYPE
 echo -e "\n${GREEN}[Grafikkarte (GPU)]${NC}"
 nvidia-smi | head -n 12
 
+# For all Other Gpus
+
+
 # Netzwerkadapter
 echo -e "\n${GREEN}[Netzwerk]${NC}"
 lspci | grep -i network
